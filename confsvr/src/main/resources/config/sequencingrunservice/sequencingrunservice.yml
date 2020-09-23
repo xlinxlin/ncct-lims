@@ -1,0 +1,26 @@
+#spring.datasource.url= jdbc:postgresql://localhost:5432/sequencing_run_db
+#spring.datasource.username=yan
+#spring.datasource.password={cipher}7b974454a4eb2979d641f3149de03a0b3ad752bb5b8652702ba2d58629611965
+##spring.datasource.password=menglu0607
+#server.error.include-binding-errors=always
+#server.error.include-exception=true
+#server.error.include-message=always
+#management.endpoints.web.exposure.include=info,health,env
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health,env
+server:
+  port: 8080
+  error:
+    include-binding-errors: always
+    include-exception: true
+    include-message: always
+
+spring:
+  datasource:
+    password: '{cipher}7b974454a4eb2979d641f3149de03a0b3ad752bb5b8652702ba2d58629611965'
+    url: jdbc:postgresql://localhost:5432/sequencing_run_db
+    username: yan

@@ -1,0 +1,7 @@
+version: '2'
+services:
+  eurekaserver:
+      image: mkzhouy1/ncct-eureka-server:v0.1
+      ports:
+        - "8761:8761"
+

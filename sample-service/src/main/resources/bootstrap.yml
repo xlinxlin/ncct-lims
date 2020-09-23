@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: sampleservice
+  profiles:
+    active:
+      default
+  cloud:
+    config:
+      uri: http://localhost:8888
+management:
+  endpoint:
+    web:
+      exposure:
+        include: info,health,env
+encrypt:
+  key: "Secrete Key"

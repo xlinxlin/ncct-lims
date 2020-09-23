@@ -1,0 +1,17 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health,env
+server:
+  port: 8081
+  error:
+    include-binding-errors: always
+    include-exception: true
+    include-message: always
+
+spring:
+  datasource:
+    password: '{cipher}7b974454a4eb2979d641f3149de03a0b3ad752bb5b8652702ba2d58629611964'
+    url: jdbc:postgresql://localhost:5432/sample_receipt_db
+    username: yan
